@@ -122,7 +122,9 @@ class aboutUs extends StatelessWidget {
                 SizedBox(width: 60),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Icon(Icons.arrow_forward_ios_outlined),
+                  child: Icon(
+                    Icons.arrow_forward_ios_outlined,
+                  ),
                 ),
               ],
             ),

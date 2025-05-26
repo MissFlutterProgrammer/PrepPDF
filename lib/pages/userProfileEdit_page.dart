@@ -121,8 +121,9 @@ class _UserProfileEditState extends State<UserProfileEdit> {
                 showCursor: true,
                 decoration: InputDecoration(
                   labelText: 'Name',
-                  labelStyle:
-                      TextStyle(color: Theme.of(context).colorScheme.secondary),
+                  labelStyle: TextStyle(
+                    color: Theme.of(context).colorScheme.secondary,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -172,9 +173,7 @@ class _UserProfileEditState extends State<UserProfileEdit> {
                 child: ElevatedButton(
                   style: ButtonStyle(
                     backgroundColor: WidgetStateProperty.all(Colors.deepPurple),
-                    padding: const WidgetStatePropertyAll(
-                      EdgeInsets.all(16),
-                    ),
+                    padding: const WidgetStatePropertyAll(EdgeInsets.all(16)),
                   ),
                   onPressed: _showConfirmationDialog,
                   child: const Text(

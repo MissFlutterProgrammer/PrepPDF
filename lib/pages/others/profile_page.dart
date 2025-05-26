@@ -85,7 +85,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 color: Theme.of(context).colorScheme.primary,
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -187,7 +187,9 @@ class _ProfilePageState extends State<ProfilePage> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Icon(Icons.nights_stay_rounded),
+                                    const Icon(
+                                      Icons.nights_stay_rounded,
+                                    ),
                                     const Text(
                                       'Dark Mode',
                                       style: TextStyle(

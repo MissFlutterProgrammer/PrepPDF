@@ -110,7 +110,9 @@ class _AnswerPageState extends State<AnswerPage> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
+            return Center(
+              child: Text('Error: ${snapshot.error}'),
+            );
           } else {
             return Consumer<StorageAnsProvider>(
               builder: (context, storageAnsProvider, child) {

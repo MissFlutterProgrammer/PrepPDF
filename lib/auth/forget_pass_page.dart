@@ -99,7 +99,9 @@ class _ForgetPassPageState extends State<ForgetPassPage> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-                            child: Image.asset('assets/images/forget_pass.png'),
+                            child: Image.asset(
+                              'assets/images/forget_pass.png',
+                            ),
                           ),
                           const SizedBox(height: 20),
                           Text(
@@ -135,9 +137,9 @@ class _ForgetPassPageState extends State<ForgetPassPage> {
                                 ),
                                 labelText: " Email ",
                                 labelStyle: TextStyle(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .secondary),
+                                  color:
+                                      Theme.of(context).colorScheme.secondary,
+                                ),
                               ),
                             ),
                           ),

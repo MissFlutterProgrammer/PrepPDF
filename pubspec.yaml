@@ -39,7 +39,6 @@ flutter:
     - assets/grid/
     # - .env
 
-  # example:
   # fonts:
   #   - family: Schyler
   #     fonts:
