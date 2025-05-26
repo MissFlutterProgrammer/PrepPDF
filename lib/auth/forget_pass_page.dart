@@ -1,5 +1,6 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -100,9 +101,7 @@ class _ForgetPassPageState extends State<ForgetPassPage> {
                             padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                             child: Image.asset('assets/images/forget_pass.png'),
                           ),
-                          const SizedBox(
-                            height: 20,
-                          ),
+                          const SizedBox(height: 20),
                           Text(
                             "Provide you account email \nfor which we wont to sent reset password Link!",
                             style: GoogleFonts.lato(
@@ -112,9 +111,7 @@ class _ForgetPassPageState extends State<ForgetPassPage> {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(
-                            height: 40,
-                          ),
+                          const SizedBox(height: 40),
                           //email textfield
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -145,9 +142,7 @@ class _ForgetPassPageState extends State<ForgetPassPage> {
                             ),
                           ),
 
-                          const SizedBox(
-                            height: 40,
-                          ),
+                          const SizedBox(height: 40),
 
                           //login Button
                           Padding(

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -6,7 +8,7 @@ import 'package:user_auth_crudd10/pages/others/folderAns_page.dart';
 import 'package:user_auth_crudd10/services/providers/storage_ans_provider.dart';
 
 class AnswerPage extends StatefulWidget {
-  AnswerPage({super.key});
+  const AnswerPage({super.key});
 
   @override
   State<AnswerPage> createState() => _AnswerPageState();
@@ -61,14 +63,21 @@ class _AnswerPageState extends State<AnswerPage> {
 
   void _handlePaymentError(PaymentFailureResponse response) {
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text("Payment failed: ${response.message}")),
+      SnackBar(
+        content: Text(
+          "Payment failed: ${response.message}",
+        ),
+      ),
     );
   }
 
   void _handleExternalWallet(ExternalWalletResponse response) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-          content: Text("External wallet selected: ${response.walletName}")),
+        content: Text(
+          "External wallet selected: ${response.walletName}",
+        ),
+      ),
     );
   }
 
@@ -202,7 +211,7 @@ class _AnswerPageState extends State<AnswerPage> {
                         itemBuilder: (context, index) {
                           final item = storageAnsProvider.ansItem[index];
                           return Padding(
-                            padding: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10),
                             child: GestureDetector(
                               onTap: () {
                                 if (item.path != null) {
@@ -210,7 +219,8 @@ class _AnswerPageState extends State<AnswerPage> {
                                 } else {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
-                                        content: Text("Item path is null")),
+                                      content: Text("Item path is null"),
+                                    ),
                                   );
                                 }
                               },

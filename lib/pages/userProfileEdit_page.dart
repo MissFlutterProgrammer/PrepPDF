@@ -1,9 +1,13 @@
+// ignore_for_file: file_names, library_private_types_in_public_api, use_build_context_synchronously
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class UserProfileEdit extends StatefulWidget {
+  const UserProfileEdit({super.key});
+
   @override
   _UserProfileEditState createState() => _UserProfileEditState();
 }
@@ -106,7 +110,7 @@ class _UserProfileEditState extends State<UserProfileEdit> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Form(
           key: _formKey,
           child: Column(

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 class aboutUs extends StatelessWidget {
@@ -46,9 +48,7 @@ class aboutUs extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 10,
-                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 10),
                         child: Text(
                           'PrepPdf offers free access to structured previous year question papers (PYQs) and solutions. Navigate seamlessly through a variety of subjects, supported by Firebase for reliable storage and real-time updates. Empowering students with essential exam resources and community insights, PrepPdf is your trusted companion for academic success.',
                           style: TextStyle(
@@ -57,13 +57,9 @@ class aboutUs extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
+                      SizedBox(height: 10),
                       Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 10,
-                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 10),
                         child: Row(
                           children: [
                             Text(
@@ -77,13 +73,9 @@ class aboutUs extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
-                        height: 5,
-                      ),
+                      SizedBox(height: 5),
                       Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 10,
-                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 10),
                         child: Row(
                           children: [
                             Text(

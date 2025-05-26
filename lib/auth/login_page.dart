@@ -1,6 +1,7 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:user_auth_crudd10/auth/forget_pass_page.dart';
 
@@ -109,9 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                             padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                             child: Image.asset('assets/images/login.png'),
                           ),
-                          const SizedBox(
-                            height: 20,
-                          ),
+                          const SizedBox(height: 20),
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Text(
@@ -123,9 +122,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 40,
-                          ),
+                          const SizedBox(height: 40),
                           //email textfield
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -149,15 +146,13 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                                 labelText: " Email ",
                                 labelStyle: TextStyle(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .secondary),
+                                  color:
+                                      Theme.of(context).colorScheme.secondary,
+                                ),
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 20,
-                          ),
+                          const SizedBox(height: 20),
                           //password textfield
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -182,9 +177,9 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                                 labelText: " Password ",
                                 labelStyle: TextStyle(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .secondary),
+                                  color:
+                                      Theme.of(context).colorScheme.secondary,
+                                ),
                                 suffixIcon: IconButton(
                                   onPressed: () {
                                     setState(() {
@@ -201,9 +196,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 20,
-                          ),
+                          const SizedBox(height: 20),
 
                           //remember--forget row
                           Padding(
@@ -230,9 +223,7 @@ class _LoginPageState extends State<LoginPage> {
                                     fontSize: 16,
                                   ),
                                 ),
-                                const SizedBox(
-                                  width: 40,
-                                ),
+                                const SizedBox(width: 40),
                                 Padding(
                                   padding:
                                       const EdgeInsets.symmetric(horizontal: 0),
@@ -270,9 +261,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: GestureDetector(
@@ -295,9 +284,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 15,
-            ),
+            const SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -308,9 +295,7 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(
-                  width: 10,
-                ),
+                const SizedBox(width: 10),
                 GestureDetector(
                   onTap: widget.showLoginPage,
                   child: Text(

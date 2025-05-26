@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, deprecated_member_use, avoid_types_as_parameter_names, non_constant_identifier_names, use_build_context_synchronously
+
 import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -47,9 +49,9 @@ class _FolderAnsPageState extends State<FolderAnsPage> {
                       padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
                       child: Card(
                         child: ListTile(
-                          leading: Icon(item.isFolder
-                              ? Icons.folder
-                              : Icons.picture_as_pdf),
+                          leading: Icon(
+                            item.isFolder ? Icons.folder : Icons.picture_as_pdf,
+                          ),
                           title: Text(
                             item.name.toUpperCase(),
                           ),

@@ -5,6 +5,8 @@ import 'package:user_auth_crudd10/pages/folder_page.dart';
 import 'package:user_auth_crudd10/services/providers/storage_provider.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() => _HomePageState();
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:user_auth_crudd10/auth/auth_check.dart';
 
@@ -44,9 +43,7 @@ class IntroScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
@@ -58,9 +55,7 @@ class IntroScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 110,
-            ),
+            const SizedBox(height: 110),
 
             GestureDetector(
               onTap: () {
@@ -90,9 +85,7 @@ class IntroScreen extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    const SizedBox(
-                      height: 10,
-                    ),
+                    const SizedBox(height: 10),
                     Image.asset("assets/icons/ic_intro_hand.png"),
                   ],
                 ),

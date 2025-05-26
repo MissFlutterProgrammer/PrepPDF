@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 class FirbaseApi {
@@ -9,6 +11,6 @@ class FirbaseApi {
 
     final fcmtocken = await _firebaseMessaging.getToken();
 
-    print('TOKEN:' + fcmtocken.toString());
+    print('TOKEN:$fcmtocken');
   }
 }

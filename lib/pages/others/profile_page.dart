@@ -99,8 +99,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         //userName
                                         Padding(
                                           padding: const EdgeInsets.symmetric(
-                                            horizontal: 15,
-                                          ),
+                                              horizontal: 15),
                                           child: Text(
                                             "${userData['userName']}",
                                             style: GoogleFonts.inter(
@@ -143,11 +142,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                           child: GestureDetector(
                                             onTap: () {
                                               Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        UserProfileEdit(),
-                                                  ));
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      UserProfileEdit(),
+                                                ),
+                                              );
                                             },
                                             child: Text(
                                               "Edit",
@@ -169,9 +169,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 25,
-                          ),
+                          const SizedBox(height: 25),
                           //mode section
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -213,14 +211,10 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ),
                           ),
-                          const SizedBox(
-                            height: 25,
-                          ),
+                          const SizedBox(height: 25),
                           //about section
                           const aboutUs(),
-                          const SizedBox(
-                            height: 25,
-                          ),
+                          const SizedBox(height: 25),
                           logOutFunc(auth: auth)
                         ],
                       ),

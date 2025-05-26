@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously
+
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -8,7 +10,7 @@ import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 class FolderPage extends StatefulWidget {
   final String path;
 
-  FolderPage({required this.path});
+  const FolderPage({super.key, required this.path});
 
   @override
   State<FolderPage> createState() => _FolderPageState();
@@ -47,9 +49,9 @@ class _FolderPageState extends State<FolderPage> {
                       padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
                       child: Card(
                         child: ListTile(
-                          leading: Icon(item.isFolder
-                              ? Icons.folder
-                              : Icons.picture_as_pdf),
+                          leading: Icon(
+                            item.isFolder ? Icons.folder : Icons.picture_as_pdf,
+                          ),
                           title: Text(
                             item.name.toUpperCase(),
                           ),
